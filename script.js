@@ -26,28 +26,28 @@ contar el numero de vocales
 
 */
 var vocales = [["a",0],["e",0],["i",0],["o",0],["u",0]];
-var palabra = "mUrCieLago";
+var palabra = "esteERnoclEIDOmStoiDEo";
 palabra = palabra.toLowerCase();	
 
 for(var i = 0; i < palabra.length; i++)
-	{
+{
 	for(var j=0;j<5;j++)	
-		{
-		if(palabra.charAt(i)===vocales[j][0])
-			{
-			vocales[j][1]=vocales[j][1]+1;
-			}
-		else
-			{
-			console.log("no se encontro la vocal");	
-			}
-		}
-
-	}
-for(var resultado = 0; resultado<5;resultado++)
 	{
-	console.log("de la vocal "+vocales[resultado][0]+" se encontraron "+vocales[resultado][1]+" resultados");
+		if(palabra.charAt(i)===vocales[j][0])
+		{
+			vocales[j][1]=vocales[j][1]+1;
+		}
+		else
+		{
+			console.log("no se encontro la vocal");	
+		}
 	}
+
+}
+for(var resultado = 0; resultado<5;resultado++)
+{
+	console.log("de la vocal "+vocales[resultado][0]+" se encontraron "+vocales[resultado][1]+" resultados");
+}
 
 /* ejercicio 3
 
@@ -59,24 +59,24 @@ var palabra = "parAnGUTIrimiCUAro";
 palabra = palabra.toLowerCase();	
 
 for(var i = 0; i < palabra.length; i++)
-	{
+{
 	for(var j=0;j<vocales.length;j++)	
-		{
-		if(palabra.charAt(i)===vocales[j][0])
-			{
-			vocales[j][1]=vocales[j][1]+1;
-			}
-		else
-			{
-			console.log("no se encontro la vocal");	
-			}
-		}
-
-	}
-for(var resultado = 0; resultado<vocales.length;resultado++)
 	{
-	console.log("de la vocal "+vocales[resultado][0]+" se encontraron "+vocales[resultado][1]+" resultados");
+		if(palabra.charAt(i)===vocales[j][0])
+		{
+			vocales[j][1]=vocales[j][1]+1;
+		}
+		else
+		{
+			console.log("no se encontro la vocal");	
+		}
 	}
+
+}
+for(var resultado = 0; resultado<vocales.length;resultado++)
+{
+	console.log("de la vocal "+vocales[resultado][0]+" se encontraron "+vocales[resultado][1]+" resultados");
+}
 
 /* ejercicio 4
 
@@ -90,56 +90,56 @@ var resultado = astring.charAt(0);
 var array = [];
 var array2 = [];
 if(numero.length%2==0)
-	{
+{
 	for(var i = 0; i<resultado ;i++ )
-		{
+	{
 		array.push(numero.charAt(i));
-		}
+	}
 	for(var j = numero.length-1; j>=resultado ; j-- )
-		{
+	{
 		array2.push(numero.charAt(j));
-		}	
+	}	
 	for(var k=0 ;k<array.length;k++)
-		{
+	{
 		if(array[k]==array2[k])
-			{
+		{
 			if(k==array.length-1)
-				{
-				console.log("correcto el numero es capicua");
-				}
-			}
-		else
 			{
+				console.log("correcto el numero es capicua");
+			}
+		}
+		else
+		{
 			console.log("El numero no es capicua");
 			break;
-			}
-
 		}
+
 	}
+}
 else if (numero.length%2==1)
-	{
+{
 	for(var i = 0; i<resultado ;i++ )
-		{
+	{
 		array.push(numero.charAt(i));
-		}
+	}
 	for(var j = numero.length-1; j>=resultado ; j-- )
-		{
+	{
 		array2.push(numero.charAt(j));
-		}	
+	}	
 	for(var k=0 ;k<array.length;k++)
-		{
+	{
 		if(array[k]==array2[k])
-			{
+		{
 			if(k==array.length-1)
-				{
-				console.log("correcto el numero es capicua");
-				}
-			}
-		else
 			{
+				console.log("correcto el numero es capicua");
+			}
+		}
+		else
+		{
 			console.log("El numero no es capicua");
 			break;
-			}
-
 		}
+
 	}
+}
